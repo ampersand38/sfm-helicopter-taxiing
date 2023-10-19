@@ -1,0 +1,12 @@
+name = "SFM Helicopter Taxiing";
+picture = "logo_ampersand_ca.paa";
+actionName = "GitHub";
+action = "https://github.com/ampersand38/sfm-helicopter-taxiing";
+description = "Taxi helicopters on the ground in Standard Flight Model.";
+logo = "logo_ampersand_ca.paa";
+logoOver = "logo_ampersand_ca.paa";
+tooltip = "SFM Helicopter Taxiing";
+tooltipOwned = "SFM Helicopter Taxiing";
+overview = "Taxi helicopters on the ground in Standard Flight Model.";
+author = "Ampersand";
+overviewPicture = "logo_ampersand_ca.paa";
