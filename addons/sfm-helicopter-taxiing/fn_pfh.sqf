@@ -23,7 +23,7 @@ if (
 
 velocityModelSpace _heli params ["_x", "_y"];
 private _input = inputAction "HeliCyclicForward" + inputAction "HeliRopeAction";
-private _isTaxi = _y < 10 && {isEngineOn _heli} && {_input > 0}; // && {inputAction "HeliCollectiveLower" + inputAction "HeliCollectiveLowerCont" >= 1};
+private _isTaxi = _y < (sfm_taxiing_maxSpeed / 3.6) && {isEngineOn _heli} && {_input > 0}; // && {inputAction "HeliCollectiveLower" + inputAction "HeliCollectiveLowerCont" >= 1};
 if (!_isTaxi && {_y < 0.1}) exitWith {};
 
 _acc = (sfmtaxi_const + sfmtaxi_factor * _input * parseNumber _isTaxi);
